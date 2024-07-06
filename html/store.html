@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Scott Pilgrim vs. The World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/store.css">
+    <link rel="icon" href="../img/scotticon.png"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </style>
+  </head>
+
+  <body>
+    <!-- ENCABEZADO-->
+    <header>
+
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars fa-2x icon-color"></i>
+      </div>
+
+      <!--div es un contenedor-->
+      <div class="encabezado">
+
+        <nav class="menu">
+        <!--LOGO-->
+        <img src="../img/img-inicio/logo.png" alt="Logo Scott" class="logo">
+          
+          <!--<li><a href="index.html">Main</a></li>-->
+          <ul class="nav-menu">
+          <li><a href="../html/inicio.html">Inicio</a></li>
+          <li><a href="../html/comic.html">Cómic</a></li>
+          <li><a href="../html/corto.html">Corto</a></li>
+          <li><a href="../html/pelicula.html">Película</a></li>
+          <li><a href="../html/videojuego.html">Videojuego</a></li>
+          <li><a href="../html/serie animada.html">Serie animada</a></li>
+          <li><a href="../html/store.html">Store</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+    <!--CIERRA ENCABEZADO-->
+<!-- Primera sección con imagen de fondo -->
+  <section class="seccion-fondo">
+    <img src="../img/img-merch/sorteo-1.jpg" alt="Imagen de fondo" class="img-fondo">
+  </section>
+  
+
+
+<!--TIENDA-->
+<section class="tienda">
+<div class="tienda-encabezado">
+  <h1>¡Compra tus productos favoritos!</h1>
+
+  <div class="container-icon">
+    <div class="container-cart-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon-cart"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+        />
+      </svg>
+      <div class="count-products">
+        <span id="contador-productos">0</span>
+      </div>
+    </div>
+
+    <div class="container-cart-products hidden-cart">
+      <div class="row-product hidden">
+        <div class="cart-product">
+          <div class="info-cart-product">
+            <span class="cantidad-producto-carrito">1</span>
+            <p class="titulo-producto-carrito">Zapatos Nike</p>
+            <span class="precio-producto-carrito">$80</span>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-close"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="cart-total hidden">
+        <h3>Total:</h3>
+        <span class="total-pagar">$200</span>
+      </div>
+      <p class="cart-empty">El carrito está vacío</p>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container-items">
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/portadav1.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim Vol.1</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Agregar</button>
+    </div>
+  </div>
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/portadav2.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim Vol.2</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Agregar</button>
+    </div>
+  </div>
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/portadav3.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim Vol.3</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Agregar</button>
+    </div>
+  </div>
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/portadav4.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim Vol.4</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Agregar</button>
+    </div>
+  </div>
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/portadav5.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim Vol.5</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Agregar</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/portadav6.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim Vol.6</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Agregar</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/merch-1.png"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pillgrim - coleccion completa</h2>
+      <p class="price">$5000</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/bluray.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim vs. The World 2010</h2>
+      <p class="price">$2000</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/sountrack1.webp"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim vs. The World 2010 (sountrack)</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/the_game0.webp"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim: The game (Complete Edition)</h2>
+      <p class="price">$1000</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+  
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/sountrack2.webp"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim: The game (sountrack)</h2>
+      <p class="price">$500</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <figure>
+      <img
+        src="../img/img-merch/the_game2.jpg"
+        alt="producto"
+      />
+    </figure>
+    <div class="info-product">
+      <h2>Scott Pilgrim: The game (Edition K.O.)</h2>
+      <p class="price">$500</p>
+      <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+
+
+
+</div>
+
+</section>
+
+<!--FIN DE LA TIENDA-->
+
+
+
+      <!--footer aqui, no recuerdo la etiqueta>-->
+
+<footer class="footer">
+        <div class="redes"> 
+        <div class="redes-icon">
+        <a href="https://twitter.com/scottpilgrim?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/groups/scottpilgrimporelmundo" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/scottpilgrimworld/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+      
+      <div class="redes-txt">
+        <p>Fernando Derechos Reservados @2024</p>
+      </div>
+      
+    
+    </div>
+        
+    </footer>
+
+    <script src="../js/store.js"></script>
+  </body>
+
+
+</html> 

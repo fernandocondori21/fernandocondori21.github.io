@@ -1,0 +1,313 @@
+*{ /*se aplica a todo*/
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+  font-family: 'Indie Flower', cursive;
+  width: 100%;
+  background-color: #75babf;
+}
+
+/*menu*/
+.menu-btn{
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.encabezado{
+  background: #000000;
+  height: 100vh;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: space-between;
+  padding: 20px 0;
+  height: 18%;
+}
+
+.logo{
+  height: 100%;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu ul li{
+  padding: 20px;
+}
+
+.menu ul li a:hover{
+  text-shadow: 0 0 30px #ffffff;
+  font-size: larger;
+}
+
+.icon-color {
+  color: #ffffff; 
+}
+
+/*fin del menu*/
+
+
+.caja-banner{
+  height: 82%;
+}
+
+.banner-comic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  height: 100%;
+}
+
+.banner-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.comic-1{
+  width: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.img-1{
+  width: 100%;
+  max-width: none;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+.cont2{
+  width: 100%;
+  height: 100%;
+}
+
+.cont2-img{
+  width: 100%;
+}
+
+.cont2-txt{
+  background: #75babf;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: calc(20px + 0.3vw);
+    padding: 5% 15% 5%;
+}
+
+.img-cont2{
+  width: 100%;
+}
+
+.cont2-gif{
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+}
+
+  
+
+.cont3{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  background: #e08d2d;
+}
+
+.cont3-txt{
+  width: 60%;
+  text-align: center;
+  padding: 5%;
+  color: white;
+  font-size: calc(13px + 1vw);
+}
+
+.cont3-img{
+width: 40%;
+}
+
+.img-cont3{
+  width: 100%;
+  padding: 25%;
+  border-radius: 50%;
+}
+
+.contenedor4{
+  display: block; 
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.cont4{
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+  width: 70%;
+  margin: auto;
+  grid-gap: 15px;
+  padding: 7%;
+  justify-content: center;
+}
+
+.cont4 img{
+  width: 100%;
+  height: auto; 
+  vertical-align: top;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.portada {
+  width: 100%;
+  height: auto;
+}
+
+.portada-hover:hover{
+  box-shadow: 0 0 30px #ffffff;
+  transform:scale(1.10);
+}
+
+.modal-content {
+  height: auto;
+}
+.carousel-inner {
+  height: auto;
+}
+.carousel-item img {
+  object-fit: content;
+  width: 100%;
+  height: auto;
+}
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.footer {
+  background-color: #b11799;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  text-align: center;
+}
+
+.redes-icon a {
+  color: #ffb850;
+  margin: 0 10px;
+  font-size: 2rem;
+}
+
+.redes-icon a:hover {
+  color: #ffffff;
+}
+
+.redes-txt p {
+  margin-top: 10px;
+  color: #ffb850;
+}
+
+
+/*Media Queries*/
+@media (max-width: 1030px){
+  .menu-btn{
+    display: block;
+  }
+
+  .menu ul.nav-menu{
+    background: #000000;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .menu ul.nav-menu.show{
+    transform: translateX(0);
+
+  }
+
+  .menu ul.nav-menu li{
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+.cont2{
+  flex-direction: column;
+}
+
+.cont2-img{
+  width: 100%;
+}
+
+.cont2-txt{
+  width: 100%;
+  padding: 10%;
+}
+
+
+.cont3{
+  flex-direction: column;
+  height: 100%;
+}
+
+.cont3-img{
+  width: 50%;
+  padding: 0%;
+}
+
+.cont3-txt{
+  width: 100%;
+  padding: 10%;
+}
+
+.redes{
+  width: 50%;
+}
+}

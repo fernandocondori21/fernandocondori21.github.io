@@ -1,0 +1,222 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+      font-family: 'Indie Flower', cursive;
+      width: 100%;
+      background-color: #007ab5;
+    }
+    
+    .menu-btn{
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      z-index: 2;
+      display: none;
+    }
+    
+    ul{
+      list-style: none;
+    }
+    
+    a{
+      color: #93defd;
+      text-decoration: none;
+    }
+    
+    .encabezado{
+    background: #9f6ce0;
+    }
+    
+    .menu{
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      justify-content: space-between;
+      padding: 20px 0;
+      height: 18vh;
+    }
+    
+    .logo{
+      height: 100%;
+    }
+    
+    .menu ul{
+      display: flex;
+    }
+    
+    .menu ul li{
+      padding: 20px;
+    }
+    
+    .menu ul li a:hover{
+      text-shadow: 0 0 30px #f2fbff;
+      font-size: larger;
+    }
+    
+    .icon-color {
+      color: #93defd;
+    }
+/* Primera sección */
+.seccion-imagen {
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .img-fondo {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 182vh;
+  }
+  
+  .texto-sombreado {
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100%;
+    padding: 10%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.63));
+    color: white; 
+    text-align: center;
+    font-size: calc(15px + 0.7vw);
+  }
+  
+  .logo-juego {
+    width: 30%;
+    height: auto;
+  }
+.seccion-video {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  padding: 5% 10%;
+  background-color: #9f6ce0;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+  
+  
+  .footer {
+    background-color: #b11799;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes {
+    text-align: center;
+  }
+  
+  .redes-icon a {
+    transition: transform 0.1s ease;
+    color: #ffb850;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  .redes-icon a:hover {
+    transform: scale(1.8);
+    color: #ffffff;
+  }
+  
+  .redes-txt p {
+    margin-top: 10px;
+    color: #ffb850;
+  }  
+
+
+  @media (max-width: 1030px){
+    .menu-btn{
+      display: block;
+    }
+  
+    .menu ul.nav-menu{
+      background: #9f6ce0;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      padding: 30px;
+      transform: translateX(-400px);
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .menu ul.nav-menu.show{
+      transform: translateX(0);
+  
+    }
+  
+    .menu ul.nav-menu li{
+      font-size: 20px;
+      padding: 12px;
+    }
+  
+    .menu{
+      display: flex;
+      justify-content: center;
+      height: 12vh;
+    }
+  
+  .img-fondo{
+    height: 188vh;
+  }
+  
+  .cont2{
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .cont2-img{
+      height: 70vh;
+  }
+  
+  .cont2-txt{
+    width: 100%;
+    padding: 10%;
+  }
+  
+  
+  .cont3{
+    height: 100vh;
+  }
+
+  .cont3-player{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 80%;
+  }
+  
+  .seccion-video{
+    height: 50vh;
+  }
+  .iframe{
+      width: 100%;
+  }
+  .cont3-img{
+    width: 100%;
+  }
+  
+  .cont3-txt{
+    width: 100%;
+    padding: 10%;
+  }
+  
+  .redes{
+    width: 50%;
+  }
+  }
